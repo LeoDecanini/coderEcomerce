@@ -27,9 +27,9 @@ const SlideBar = ({ onSizeChange }) => {
                 htmlFor="cat-1"
                 className="text-gray-600 ml-3 cusror-pointer"
               >
-                Bedroom
+                Trajes para Hombres
               </label>
-              <div className="ml-auto text-gray-600 text-sm">(15)</div>
+              <div className="ml-auto text-gray-600 text-sm">(3)</div>
             </div>
             <div className="flex items-center">
               <input
@@ -42,9 +42,9 @@ const SlideBar = ({ onSizeChange }) => {
                 htmlFor="cat-2"
                 className="text-gray-600 ml-3 cusror-pointer"
               >
-                Sofa
+                Vestidos Formales para Mujeres
               </label>
-              <div className="ml-auto text-gray-600 text-sm">(9)</div>
+              <div className="ml-auto text-gray-600 text-sm">(3)</div>
             </div>
             <div className="flex items-center">
               <input
@@ -57,9 +57,9 @@ const SlideBar = ({ onSizeChange }) => {
                 htmlFor="cat-3"
                 className="text-gray-600 ml-3 cusror-pointer"
               >
-                Office
+                Accesorios para Trajes
               </label>
-              <div className="ml-auto text-gray-600 text-sm">(21)</div>
+              <div className="ml-auto text-gray-600 text-sm">(3)</div>
             </div>
             <div className="flex items-center">
               <input
@@ -72,9 +72,39 @@ const SlideBar = ({ onSizeChange }) => {
                 htmlFor="cat-4"
                 className="text-gray-600 ml-3 cusror-pointer"
               >
-                Outdoor
+                Ropa Formal para Mujeres
               </label>
-              <div className="ml-auto text-gray-600 text-sm">(10)</div>
+              <div className="ml-auto text-gray-600 text-sm">(3)</div>
+            </div>
+            <div className="flex items-center">
+              <input
+                type="checkbox"
+                name="cat-4"
+                id="cat-4"
+                className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+              />
+              <label
+                htmlFor="cat-4"
+                className="text-gray-600 ml-3 cusror-pointer"
+              >
+                Ropa de Ceremonia
+              </label>
+              <div className="ml-auto text-gray-600 text-sm">(3)</div>
+            </div>
+            <div className="flex items-center">
+              <input
+                type="checkbox"
+                name="cat-4"
+                id="cat-4"
+                className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+              />
+              <label
+                htmlFor="cat-4"
+                className="text-gray-600 ml-3 cusror-pointer"
+              >
+                Ropa Formal para Niños
+              </label>
+              <div className="ml-auto text-gray-600 text-sm">(3)</div>
             </div>
           </div>
         </div>
@@ -108,68 +138,48 @@ const SlideBar = ({ onSizeChange }) => {
           </h3>
           <div className="flex items-center gap-2">
             <div className="size-selector">
-              <input
-                type="radio"
-                name="size"
-                id="size-xs"
-                className="hidden"
-              />
+              <input type="radio" name="size" id="size-xs" className="hidden" />
               <label
-              onClick={() => handleSizeChange("XS")}
+                onClick={() => handleSizeChange("XS")}
                 htmlFor="size-xs"
                 className={`text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 ${
-                  selectedSize === "XS" ? "bg-red-500 text-white" : ""
+                  selectedSize === "XS" ? "bg-subtle text-white" : ""
                 }`}
               >
                 XS
               </label>
             </div>
             <div className="size-selector">
-              <input
-                type="radio"
-                name="size"
-                id="size-sm"
-                className="hidden"
-              />
+              <input type="radio" name="size" id="size-sm" className="hidden" />
               <label
-              onClick={() => handleSizeChange("S")}
+                onClick={() => handleSizeChange("S")}
                 htmlFor="size-xs"
                 className={`text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 ${
-                  selectedSize === "S" ? "bg-red-500 text-white" : ""
+                  selectedSize === "S" ? "bg-subtle text-white" : ""
                 }`}
               >
                 S
               </label>
             </div>
             <div className="size-selector">
-              <input
-                type="radio"
-                name="size"
-                id="size-sm"
-                className="hidden"
-              />
+              <input type="radio" name="size" id="size-sm" className="hidden" />
               <label
-              onClick={() => handleSizeChange("M")}
+                onClick={() => handleSizeChange("M")}
                 htmlFor="size-xs"
                 className={`text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 ${
-                  selectedSize === "M" ? "bg-red-500 text-white" : ""
+                  selectedSize === "M" ? "bg-subtle text-white" : ""
                 }`}
               >
                 M
               </label>
             </div>
             <div className="size-selector">
-              <input
-                type="radio"
-                name="size"
-                id="size-sm"
-                className="hidden"
-              />
+              <input type="radio" name="size" id="size-sm" className="hidden" />
               <label
-              onClick={() => handleSizeChange("L")}
+                onClick={() => handleSizeChange("L")}
                 htmlFor="size-xs"
                 className={`text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 ${
-                  selectedSize === "L" ? "bg-red-500 text-white" : ""
+                  selectedSize === "L" ? "bg-subtle text-white" : ""
                 }`}
               >
                 L
@@ -181,7 +191,7 @@ const SlideBar = ({ onSizeChange }) => {
                 onClick={() => handleSizeChange("XL")}
                 htmlFor="size-xs"
                 className={`text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 ${
-                  selectedSize === "XL" ? "bg-red-500 text-white" : ""
+                  selectedSize === "XL" ? "bg-subtle text-white" : ""
                 }`}
               >
                 XL

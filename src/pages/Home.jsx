@@ -3,7 +3,6 @@ import React from "react";
 import Banner from "../components/Home/Banner";
 import Features from "../components/Home/Features";
 import Categories from "../components/Home/Categories";
-import NewArrival from "../components/Home/NewArrival";
 import Ads from "../components/Home/Ads";
 import ProductoCard from "../components/Home/components/ProductoCard";
 

@@ -22,11 +22,11 @@ const Cart = ({ isOpen, closeCart }) => {
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
                   />
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
                   />
                 </svg>
@@ -34,9 +34,6 @@ const Cart = ({ isOpen, closeCart }) => {
             </div>
             <div className="flex items-center mb-10">
               <h2 className="text-3xl font-bold  ">Shopping Cart</h2>
-              <span className="inline-flex items-center justify-center w-8 h-8 ml-4 text-base font-bold bg-red-600 rounded-full text-gray-50">
-                6
-              </span>
             </div>
             <div className="block pb-6 mb-6 -mx-4 border-b border-gray-200 md:flex">
               <div className="w-full px-4 mb-6 md:w-1/3 md:mb-0">
@@ -51,10 +48,10 @@ const Cart = ({ isOpen, closeCart }) => {
               <div className="w-full px-4 md:2/3">
                 <div className="flex justify-between">
                   <div className="">
-                    <h2 className="mb-2 text-xl font-bold ">Product Name</h2>
+                    <h2 className="mb-2 text-xl font-bold ">Elegant Suit</h2>
                     <p className="mb-4 text-sm font-medium text-gray-600  ">
                       {" "}
-                      Quantity: 4
+                      Quantity: 1
                     </p>
                     <div>
                       <button className="px-4 py-2 mb-4 mr-4 font-medium text-center text-primary border border-primary rounded-md md:mb-0 hover:bg-primary hover:text-gray-100">
@@ -66,27 +63,34 @@ const Cart = ({ isOpen, closeCart }) => {
                     </div>
                   </div>
                   <div>
-                    <p className="text-lg font-bold text-primary ">$299.00</p>
+                    <p className="text-lg font-bold text-primary ">$150</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex justify-between text-base ">
               <p>Subtotal</p>
-              <p>$400.00</p>
+              <p>$180</p>
             </div>
             <p className="mt-4 text-sm text-gray-500 ">
               Shipping calculated at checkout period.
             </p>
             <div className="flex items-center justify-center mt-6">
-              <button className="w-full py-3 text-lg font-medium bg-primary rounded-md text-gray-50 hover:bg-primary/70">
-                Checkout
-              </button>
+              <Link
+                to={"/checkout"}
+                className="w-full text-center py-3 text-lg font-medium bg-primary rounded-md text-gray-50 hover:bg-primary/70"
+              >
+                checkout
+              </Link>
             </div>
             <div className="flex items-center justify-center mt-6">
               <p>
                 <span className="">or,</span>
-                <Link to={'/shop'} onClick={closeCart} className="pl-1 text-primary hover:underline">
+                <Link
+                  to={"/shop"}
+                  onClick={closeCart}
+                  className="pl-1 text-primary hover:underline"
+                >
                   Continue Shopping
                 </Link>
               </p>

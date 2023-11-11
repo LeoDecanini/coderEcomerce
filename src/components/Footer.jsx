@@ -3,23 +3,23 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-    <footer className="bg-white pt-16 pb-12 border-t border-gray-100">
+    <footer className="bg-secondary pt-16 pb-12 border-t border-gray-100">
         <div className="container grid grid-cols-1 ">
             <div className="col-span-1 space-y-4">
-                <img src="/images/logo.svg" alt="logo" className="w-30" />
+                <img src="/images/logo.png" alt="logo" className="w-30" />
                 <div className="mr-2">
                     <p className="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic?
+                        Gracias por visitarnos. Esperamos que vuelvas.
                     </p>
                 </div>
                 <div className="flex space-x-5">
-                    <a href="#" className="text-gray-400 hover:text-gray-500"><i
+                    <a href="#" className="text-gray-400 hover:text-primary"><i
                             className="fa-brands fa-facebook-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-gray-500"><i
+                    <a href="#" className="text-gray-400 hover:text-primary"><i
                             className="fa-brands fa-instagram-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-gray-500"><i
+                    <a href="#" className="text-gray-400 hover:text-primary"><i
                             className="fa-brands fa-twitter-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-gray-500">
+                    <a href="#" className="text-gray-400 hover:text-primary">
                         <i className="fa-brands fa-github-square"></i>
                     </a>
                 </div>
@@ -30,19 +30,19 @@ const Footer = () => {
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Analitycs</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Marketing</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Analitycs</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Commerce</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Insights</a>
                         </div>
                     </div>
 
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Guides</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">API Status</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Pricing</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Guides</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">API Status</a>
                         </div>
                     </div>
                 </div>
@@ -50,19 +50,19 @@ const Footer = () => {
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Analitycs</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Marketing</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Analitycs</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Commerce</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Insights</a>
                         </div>
                     </div>
 
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Guides</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">API Status</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Pricing</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Guides</a>
+                            <a href="#" className="text-base text-gray-500 hover:text-primary block">API Status</a>
                         </div>
                     </div>
                 </div>

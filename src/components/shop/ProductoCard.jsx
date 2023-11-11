@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import productos from "../../data/productos.json";
 
 const ProductoCard = ({ selectedSize }) => {
@@ -7,14 +7,13 @@ const ProductoCard = ({ selectedSize }) => {
     ? productos.filter((producto) => producto.sizes.includes(selectedSize))
     : productos;
 
-
   return (
     <div className="grid md:grid-cols-3 grid-cols-2 gap-6">
       {filteredProductos.map((producto) => (
         <Link
-        to={`/producto/${producto.id}`}
+          to={`/producto/${producto.id}`}
           key={producto.id}
-          className="bg-white shadow rounded overflow-hidden group"
+          className="bg-white shadow rounded overflow-hidden group hover:border-4 hover:border-subtle"
         >
           <div className="relative">
             <img
@@ -50,9 +49,7 @@ const ProductoCard = ({ selectedSize }) => {
               </div>
             </div>
           </div>
-          <button
-            className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition"
-          >
+          <button className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">
             Add to cart
           </button>
         </Link>
