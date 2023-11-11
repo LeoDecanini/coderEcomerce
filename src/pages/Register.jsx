@@ -2,81 +2,81 @@ import React from "react";
 
 const Register = () => {
   return (
-    <div class="contain py-16">
-      <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-        <h2 class="text-2xl uppercase font-medium mb-1">Create an account</h2>
-        <p class="text-gray-600 mb-6 text-sm">Register for new cosutumer</p>
+    <div className="contain py-16">
+      <div className="max-w-lg mx-auto shadow-[0_35px_60px_15px_rgba(0,0,0,0.3)] px-6 py-7 rounded overflow-hidden">
+        <h2 className="text-2xl uppercase font-medium mb-1">Create an account</h2>
+        <p className="text-gray-600 mb-6 text-sm">Register htmlFor new cosutumer</p>
         <form >
-          <div class="space-y-2">
+          <div className="space-y-2">
             <div>
-              <label for="name" class="text-gray-600 mb-2 block">
+              <label htmlFor="name" className="text-gray-600 mb-2 block">
                 Full Name
               </label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
-                placeholder="fulan fulana"
+                className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
+                placeholder="Yout name..."
               />
             </div>
             <div>
-              <label for="email" class="text-gray-600 mb-2 block">
+              <label htmlFor="email" className="text-gray-600 mb-2 block">
                 Email address
               </label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
-                placeholder="youremail.@domain.com"
+                className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
+                placeholder="user@example.com"
               />
             </div>
             <div>
-              <label for="password" class="text-gray-600 mb-2 block">
+              <label htmlFor="password" className="text-gray-600 mb-2 block">
                 Password
               </label>
               <input
                 type="password"
                 name="password"
                 id="password"
-                class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
+                className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
                 placeholder="*******"
               />
             </div>
             <div>
-              <label for="confirm" class="text-gray-600 mb-2 block">
+              <label htmlFor="confirm" className="text-gray-600 mb-2 block">
                 Confirm password
               </label>
               <input
                 type="password"
                 name="confirm"
                 id="confirm"
-                class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
+                className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
                 placeholder="*******"
               />
             </div>
           </div>
-          <div class="mt-6">
-            <div class="flex items-center">
+          <div className="mt-6">
+            <div className="flex items-center">
               <input
                 type="checkbox"
                 name="aggrement"
                 id="aggrement"
-                class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                className="text-primary focus:ring-0 rounded-sm cursor-pointer"
               />
-              <label for="aggrement" class="text-gray-600 ml-3 cursor-pointer">
+              <label htmlFor="aggrement" className="text-gray-600 ml-3 cursor-pointer">
                 I have read and agree to the{" "}
-                <a href="#" class="text-primary">
+                <a href="#" className="text-primary">
                   terms & conditions
                 </a>
               </label>
             </div>
           </div>
-          <div class="mt-4">
+          <div className="mt-4">
             <button
               type="submit"
-              class="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium"
+              className="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium"
             >
               create account
             </button>

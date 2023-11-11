@@ -1,9 +1,11 @@
 import React from "react";
 
-const Img = ({producto}) => {
+const Img = ({ producto }) => {
   return (
     <div>
-      <img src={producto.imageSrc} alt={producto.name} className="w-full" />
+      <div className="flex justify-center items-center">
+        <img src={producto.imageSrc} alt={producto.name} className="w-96" />
+      </div>
       <div className="grid grid-cols-5 gap-4 mt-4">
         <img
           src={producto.imageSrc}

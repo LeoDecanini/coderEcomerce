@@ -98,7 +98,7 @@ const Detalles = ({ producto }) => {
                 htmlFor={`size-${size}`}
                 className={`text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm ${
                   selectedSize === size
-                    ? "text-white bg-red-500 font-bold"
+                    ? "text-white bg-subtle font-bold"
                     : "text-gray-600"
                 }`}
               >
@@ -126,7 +126,7 @@ const Detalles = ({ producto }) => {
               <label
                 htmlFor={color}
                 className={`border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm block ${
-                  selectedColor === color ? "border-red-500" : ""
+                  selectedColor === color ? "border-subtle" : ""
                 }`}
                 style={{ backgroundColor: color }}
               ></label>

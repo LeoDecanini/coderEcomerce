@@ -1,76 +1,72 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
-    <footer className="bg-secondary pt-16 pb-12 border-t border-gray-100">
+      <footer className="bg-secondary pt-16 pb-16 border-t border-gray-100">
         <div className="container grid grid-cols-1 ">
-            <div className="col-span-1 space-y-4">
-                <img src="/images/logo.png" alt="logo" className="w-30" />
-                <div className="mr-2">
-                    <p className="text-gray-500">
-                        Gracias por visitarnos. Esperamos que vuelvas.
-                    </p>
-                </div>
-                <div className="flex space-x-5">
-                    <a href="#" className="text-gray-400 hover:text-primary"><i
-                            className="fa-brands fa-facebook-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-primary"><i
-                            className="fa-brands fa-instagram-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-primary"><i
-                            className="fa-brands fa-twitter-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-primary">
-                        <i className="fa-brands fa-github-square"></i>
-                    </a>
-                </div>
+          <div className="col-span-1 space-y-4">
+            <img src="/images/logo.png" alt="logo" className="w-30" />
+            <div className="mr-2">
+              <p className="text-gray-500">
+                Gracias por visitarnos. Esperamos que vuelvas.
+              </p>
             </div>
+          </div>
 
-            <div className="col-span-2 grid grid-cols-2 gap-4">
-                <div className="grid grid-cols-2 gap-4 md:gap-8">
-                    <div>
-                        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
-                        <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Marketing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Analitycs</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Commerce</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Insights</a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
-                        <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Pricing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Guides</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">API Status</a>
-                        </div>
-                    </div>
+          <div className="col-span-2 grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 md:gap-8">
+              <div>
+                <div className="mt-4 space-y-4">
+                  <Link
+                    to={"/"}
+                    className="text-base text-gray-500 hover:text-primary block"
+                  >
+                    Home
+                  </Link>
                 </div>
-                <div className="grid grid-cols-2 gap-8">
-                    <div>
-                        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
-                        <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Marketing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Analitycs</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Commerce</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Insights</a>
-                        </div>
-                    </div>
+              </div>
 
-                    <div>
-                        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
-                        <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Pricing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">Guides</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-primary block">API Status</a>
-                        </div>
-                    </div>
+              <div>
+                <div className="mt-4 space-y-4">
+                  <Link
+                    to={"/shop"}
+                    className="text-base text-gray-500 hover:text-primary block"
+                  >
+                    Shop
+                  </Link>
                 </div>
+              </div>
             </div>
+            <div className="grid grid-cols-2 gap-8">
+              <div>
+                <div className="mt-4 space-y-4">
+                  <Link
+                    to={"/contact"}
+                    className="text-base text-gray-500 hover:text-primary block"
+                  >
+                    Contact us
+                  </Link>
+                </div>
+              </div>
+
+              <div>
+                <div className="mt-4 space-y-4">
+                  <Link
+                    to={"/profile"}
+                    className="text-base text-gray-500 hover:text-primary block"
+                  >
+                    Account
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
