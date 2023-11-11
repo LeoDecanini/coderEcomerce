@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="bg-cover bg-no-repeat bg-top py-20 bg-[url('images/bannerVogue.jpg');]">
+    <div className="bg-cover bg-no-repeat bg-top py-20 bg-[url('/images/bannerVogue.jpg');]">
       <div className="mx-14 flex">
         <div className="bg-[#202020] p-5 pb-10 rounded-md ">
           <h1 className="text-6xl text-white font-medium mb-4">

@@ -35,43 +35,78 @@ const Wrapper = () => {
               <label htmlFor="company" className="text-gray-600">
                 Company
               </label>
-              <input className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle" type="text" name="company" id="company" />
+              <input
+                className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle"
+                type="text"
+                name="company"
+                id="company"
+              />
             </div>
             <div className="flex flex-col">
               <label htmlFor="region" className="text-gray-600">
                 Country/Region
               </label>
-              <input className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle" type="text" name="Country" id="Country" />
+              <input
+                className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle"
+                type="text"
+                name="Country"
+                id="Country"
+              />
             </div>
             <div className="flex flex-col">
               <label htmlFor="address" className="text-gray-600">
                 Street address
               </label>
-              <input className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle" type="text" name="address" id="address" />
+              <input
+                className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle"
+                type="text"
+                name="address"
+                id="address"
+              />
             </div>
             <div className="flex flex-col">
               <label htmlFor="city" className="text-gray-600">
                 City
               </label>
-              <input className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle" type="text" name="City" id="City" />
+              <input
+                className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle"
+                type="text"
+                name="City"
+                id="City"
+              />
             </div>
             <div className="flex flex-col">
               <label htmlFor="phone" className="text-gray-600">
                 Phone number
               </label>
-              <input className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle" type="number" name="Phone" id="Phone" />
+              <input
+                className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle"
+                type="number"
+                name="Phone"
+                id="Phone"
+              />
             </div>
             <div className="flex flex-col">
               <label htmlFor="email" className="text-gray-600">
                 Email address
               </label>
-              <input className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle" type="email" name="Email" id="Email" />
+              <input
+                className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle"
+                type="email"
+                name="Email"
+                id="Email"
+              />
             </div>
             <div className="flex flex-col">
               <label htmlFor="company" className="text-gray-600">
                 Company
               </label>
-              <input className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle" type="text" name="company" id="company" />
+              <input
+                className="p-2 bg-gray-50 border rounded-md hover:cursor-pointer hover:border-subtle"
+                type="text"
+                name="company"
+                id="company"
+              />
             </div>
           </div>
         </div>
@@ -80,7 +115,6 @@ const Wrapper = () => {
           <h4 className="text-gray-800 text-lg mb-4 font-medium uppercase">
             order summary
           </h4>
-          
 
           <div className="flex justify-between border-b border-gray-200 mt-1 text-gray-800 font-medium py-3 uppercas">
             <p>subtotal</p>
