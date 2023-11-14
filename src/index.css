@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tamañoImg{
+    width: 1200px;
+    height: 550px;
+}

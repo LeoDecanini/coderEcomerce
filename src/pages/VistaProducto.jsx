@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import productos from "../data/productos.json";
 
-import BreadCrumb from "../components/Product/BreadCrumb";
+import BreadCrumb from "../components/BreadCrumb";
 import Img from "../components/Product/Img";
 import Detalles from "../components/Product/Detalles";
 import Description from "../components/Product/Description";
@@ -19,7 +19,7 @@ const VistaProducto = () => {
 
   return (
     <>
-      <BreadCrumb />
+      <BreadCrumb ruta="shop">shop/<span className="text-gray-500">{producto.name}</span></BreadCrumb>
 
       <div className="container grid grid-cols-2 gap-6">
         <Img producto={producto} />

@@ -1,5 +1,5 @@
 import React from "react";
-import BreadCrumb from "../components/Profile/BreadCrumb";
+import BreadCrumb from "../components/BreadCrumb";
 import Sidebar from "../components/Profile/Sidebar";
 import Info from "../components/Profile/Info";
 import ProfileInformation from "../components/Profile/ProfileInformation";
@@ -7,14 +7,14 @@ import ProfileInformation from "../components/Profile/ProfileInformation";
 const Profile = () => {
   return (
     <>
-      <BreadCrumb />
+      <BreadCrumb ruta="">Perfil</BreadCrumb>
 
       <div className="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
         <Sidebar />
 
         <div className="col-span-9 grid grid-cols-3 item gap-4 justify-end">
           <Info />
-          <ProfileInformation/>
+          <ProfileInformation />
         </div>
       </div>
     </>

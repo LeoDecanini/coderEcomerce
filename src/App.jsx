@@ -13,8 +13,6 @@ import Checkout from "./pages/Checkout";
 import Navigation from "./components/Nav";
 import Footer from "./components/Footer";
 
-import Cart from "./components/Cart";
-
 function App() {
   return (
     <>

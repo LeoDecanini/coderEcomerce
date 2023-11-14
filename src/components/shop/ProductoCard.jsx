@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import productos from "../../data/productos.json";
 
+const obtenerProductos = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(productos);
+    }, 1000);
+  });
+};
+
 const ProductoCard = ({ selectedSize }) => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    obtenerProductos().then((productos) => {
+      setData(productos);
+    });
+  }, []);
+
   const filteredProductos = selectedSize
-    ? productos.filter((producto) => producto.sizes.includes(selectedSize))
-    : productos;
+    ? data.filter((producto) => producto.sizes.includes(selectedSize))
+    : data;
 
   return (
     <div className="grid md:grid-cols-3 grid-cols-2 gap-6">
@@ -19,7 +35,7 @@ const ProductoCard = ({ selectedSize }) => {
             <img
               src={producto.imageSrc}
               alt={producto.name}
-              className="w-full"
+              className="w-full tamañoImg"
             />
           </div>
           <div className="pt-4 pb-3 px-4">
