@@ -10,7 +10,7 @@ const obtenerProductos = () => {
   });
 };
 
-const ProductoCard = ({ selectedSize }) => {
+const ProductoCard = ({ selectedSize, selectedCategory }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -19,9 +19,17 @@ const ProductoCard = ({ selectedSize }) => {
     });
   }, []);
 
-  const filteredProductos = selectedSize
-    ? data.filter((producto) => producto.sizes.includes(selectedSize))
-    : data;
+  const filteredProductos = data.filter((producto) => {
+    if (!producto) {
+      return false;
+    }
+  
+    const sizeCondition = !selectedSize || (producto.sizes && producto.sizes.includes(selectedSize));
+    const categoryCondition =
+      selectedCategory.length === 0 ||
+      (producto.category && selectedCategory.some((category) => producto.category === category));
+    return sizeCondition && categoryCondition;
+  });
 
   return (
     <div className="grid md:grid-cols-3 grid-cols-2 gap-6">

@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Cart from "./Cart";
+import { useCarrito } from "../Context/CarritoContext";
 
 const Nav = () => {
   const [isCartOpen, setCartOpen] = useState(false);
+  const { cartItems } = useCarrito();
 
   const openCart = () => {
     setCartOpen(true);

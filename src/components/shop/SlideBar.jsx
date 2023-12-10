@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
-const SlideBar = ({ onSizeChange }) => {
+const SlideBar = ({ onSizeChange, onCategoryChange }) => {
   const [selectedSize, setSelectedSize] = useState(null);
 
   const handleSizeChange = (size) => {
     setSelectedSize(size);
     onSizeChange(size);
+  };
+
+  const handleCategoryChange = (category) => {
+    onCategoryChange(category);
   };
 
   return (
@@ -22,10 +26,11 @@ const SlideBar = ({ onSizeChange }) => {
                 name="cat-1"
                 id="cat-1"
                 className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                onChange={() => handleCategoryChange("Trajes para Hombres")}
               />
               <label
                 htmlFor="cat-1"
-                className="text-gray-600 ml-3 cusror-pointer"
+                className="text-gray-600 ml-3 cursor-pointer"
               >
                 Trajes para Hombres
               </label>
@@ -37,10 +42,13 @@ const SlideBar = ({ onSizeChange }) => {
                 name="cat-2"
                 id="cat-2"
                 className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                onChange={() =>
+                  handleCategoryChange("Vestidos Formales para Mujeres")
+                }
               />
               <label
                 htmlFor="cat-2"
-                className="text-gray-600 ml-3 cusror-pointer"
+                className="text-gray-600 ml-3 cursor-pointer"
               >
                 Vestidos Formales para Mujeres
               </label>
@@ -52,10 +60,11 @@ const SlideBar = ({ onSizeChange }) => {
                 name="cat-3"
                 id="cat-3"
                 className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                onChange={() => handleCategoryChange("Accesorios para Trajes")}
               />
               <label
                 htmlFor="cat-3"
-                className="text-gray-600 ml-3 cusror-pointer"
+                className="text-gray-600 ml-3 cursor-pointer"
               >
                 Accesorios para Trajes
               </label>
@@ -67,10 +76,13 @@ const SlideBar = ({ onSizeChange }) => {
                 name="cat-4"
                 id="cat-4"
                 className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                onChange={() =>
+                  handleCategoryChange("Ropa Formal para Mujeres")
+                }
               />
               <label
                 htmlFor="cat-4"
-                className="text-gray-600 ml-3 cusror-pointer"
+                className="text-gray-600 ml-3 cursor-pointer"
               >
                 Ropa Formal para Mujeres
               </label>
@@ -79,13 +91,14 @@ const SlideBar = ({ onSizeChange }) => {
             <div className="flex items-center">
               <input
                 type="checkbox"
-                name="cat-4"
-                id="cat-4"
+                name="cat-5"
+                id="cat-5"
                 className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                onChange={() => handleCategoryChange("Ropa de Ceremonia")}
               />
               <label
-                htmlFor="cat-4"
-                className="text-gray-600 ml-3 cusror-pointer"
+                htmlFor="cat-5"
+                className="text-gray-600 ml-3 cursor-pointer"
               >
                 Ropa de Ceremonia
               </label>
@@ -94,13 +107,14 @@ const SlideBar = ({ onSizeChange }) => {
             <div className="flex items-center">
               <input
                 type="checkbox"
-                name="cat-4"
-                id="cat-4"
+                name="cat-6"
+                id="cat-6"
                 className="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                onChange={() => handleCategoryChange("Ropa Formal para Niños")}
               />
               <label
-                htmlFor="cat-4"
-                className="text-gray-600 ml-3 cusror-pointer"
+                htmlFor="cat-6"
+                className="text-gray-600 ml-3 cursor-pointer"
               >
                 Ropa Formal para Niños
               </label>

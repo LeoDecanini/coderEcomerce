@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
+import { useCarrito } from "../../Context/CarritoContext";
+import { useParams } from "react-router-dom";
 
 const Detalles = ({ producto }) => {
   const availabilityText = producto.availability ? "In Stock" : "Out of Stock";
@@ -25,6 +27,17 @@ const Detalles = ({ producto }) => {
     if (newQuantity >= 1) {
       setQuantity(newQuantity);
     }
+  };
+
+  const { id } = useParams();
+  const { addToCart } = useCarrito();
+
+  const productoSelected = {
+    id: parseInt(id),
+  };
+
+  const handleAddToCart = () => {
+    addToCart(productoSelected);
   };
 
   return (
@@ -160,8 +173,14 @@ const Detalles = ({ producto }) => {
       </div>
 
       <div className="mt-6 flex gap-3 pb-5 pt-5">
-        <button className="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-primary transition">
-          <i className="fa-solid fa-bag-shopping"></i> Add to cart
+        <button
+          className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition"
+          onClick={() => {
+            console.log("Botón 'Add to Cart' clickeado");
+            handleAddToCart();
+          }}
+        >
+          Add to Cart
         </button>
       </div>
     </div>

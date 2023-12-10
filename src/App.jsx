@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
@@ -12,30 +12,24 @@ import Checkout from "./pages/Checkout";
 
 import Navigation from "./components/Nav";
 import Footer from "./components/Footer";
+import { CarritoProvider } from "./Context/CarritoContext";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
+      <Router>
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
-          
           <Route path="/producto/:id" element={<VistaProducto />} />
-
           <Route path="/checkout" element={<Checkout />} />
-
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          
           <Route path="/profile" element={<Profile />} />
-
         </Routes>
         <Footer />
-      </BrowserRouter>
-    </>
+      </Router>
   );
 }
 

@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import productos from "../../data/productos.json";
 import { Link } from "react-router-dom";
 
+import { useCarrito } from "../../Context/CarritoContext";
+import { useParams } from "react-router-dom";
+
 const ProductoCard = () => {
   const settings = {
     dots: true,
@@ -35,6 +38,17 @@ const ProductoCard = () => {
         },
       },
     ],
+  };
+
+  const { id } = useParams();
+  const { addToCart } = useCarrito();
+
+  const producto = {
+    id: parseInt(id),
+  };
+
+  const handleAddToCart = () => {
+    addToCart(producto);
   };
 
   return (
@@ -100,12 +114,16 @@ const ProductoCard = () => {
                   </div>
                 </div>
               </div>
-              <a
-                href="#"
+
+              <button
                 className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition"
+                onClick={() => {
+                  console.log("Botón 'Add to Cart' clickeado");
+                  handleAddToCart();
+                }}
               >
-                Add to cart
-              </a>
+                Add to Cart
+              </button>
             </div>
           </Link>
         ))}
